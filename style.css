@@ -1,0 +1,90 @@
+// Name:Annauth Muditaa, Username:ma17jq, ID:6334965
+
+           body { 
+                  margin: 0;
+                  font-family: Arial, Helvetica, sans-serif;
+
+           }
+           
+           @media screen and (min-width: 480px) {
+           
+           body {
+                 background-color: cream;
+                }
+           
+           }
+    
+           header { 
+                  background-color: deepskyblue; 
+                  background-image: url(http://assets.kraftfoods.com/recipe_images/opendeploy/535548_2_1_retail-1e623977f27f07f2e29bdd3c9edce97014937bfe_642x428.jpg);
+                  text-align: center; 
+                  padding: 150px; 
+                  color: white;
+          
+           }
+           
+           h1 {
+                margin: 4 pt 12 pt;
+                text-align: center;
+            
+            }
+            
+            .fancy {
+                    font-family: "Junicode", "Comic Sans MS", cursive, sans serif;
+                    color: #c88851;
+
+            }
+
+            .navbar { 
+                     overflow: hidden;
+                     background-color: beige;
+
+            }
+            
+            .navbar a {
+                      float: left;
+                      display: block;
+                      color: brown;
+                      padding: 20px 210px;
+                      text-decoration: none;
+            }
+            
+            .nav a {
+                      display: block;
+                      padding: 10px 10px;
+                      text-decoration: none;
+                      font-family: Arial, Helvetica, sans-serif;
+                      color: #86592d;
+            }
+
+            .na a {
+            color: black;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            position: absolute;
+            top: 8px;
+            right: 16px;
+             
+            }  
+
+            footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: brown;
+            color: white;
+            text-align: center;
+
+            }
+
+         .b {
+         background-color: lightgrey;
+         width: 300px;
+         border: 15px solid black;
+         padding: 20px;
+         margin: 10px;
+
+         }
+

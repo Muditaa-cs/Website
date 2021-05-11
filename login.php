@@ -1,24 +1,13 @@
-// Name:Annauth Muditaa, Username:ma17jq, ID:6334965
-#!/usr/bin/php-cgi
 <?php
-   include 'check.php';
+session_start();
 ?>
-<html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <head>
-      <link rel="stylesheet" type="text/css" href="style.css">
-   </head>
-   
-<body>
-
- <?php
-      if(isset($_POST['submit'])){
-        $username = $_POST['id']; 
-        $password = $_POST['password'];
-        if($username === 'admin' && $password === 'password'){
-          $_SESSION['login'] = true; 
-          header('Location:product.php'); 
-          die();
+<?php
+      if(isset($_POST["Submit"])){
+        $username = $_POST["id"];
+        $password = $_POST["password"];
+        if($username === "admin" && $password === "password"){
+          header("Location: product.php");
+          $_SESSION["login"] = "true";
         } 
         
         else {
@@ -26,19 +15,33 @@
         }
 
       }
-    ?>
+?>
 
-<h2><font face="papyrus" color="brown">BAKERY SHOP LOGIN FORM</font></h2>
-    <form id="login" method="post" action="#" >
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <head>
+   <script>
+    alert('Enable cookies when using this website. Username and password are at the bottom of the page.');
+   </script>
+      <link rel="stylesheet" type="text/css" href="main.css">
+   </head>
+   
+<body>
+<div class="c">
+
+<font face="papyrus" color="brown" size="40px">BAKERY SHOP LOGIN FORM</font>
     
-    <dd><font face="Monaco">Username:</font><input type="text" name="id" id="id"></dd>
-    <dd><font face="Monaco">Password:</font><input type="password" name="password" id="password"></dd>
+<form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>" >
+    
+    <font face="Monaco">Username:</font><input type="text" name="id" id="id"></br>
+    <font face="Monaco">Password:</font><input type="password" name="password" id="password"></br>
 				
-    <dd><input type="submit" value="Login"></dd>
-
-    </form>
+    <input type="submit" value="Login" name="Submit">
+  
+</form>
+</div>
 
 </body>
 
-<footer><font face="Monaco">For all users to log in: Username=admin, Password=password</font></footer>
+<footer><font face="Monaco">For all users to log in: Username = admin, Password = password</font></footer>
 </html>

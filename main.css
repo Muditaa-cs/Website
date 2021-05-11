@@ -1,0 +1,27 @@
+body{
+
+background-image: url(https://webstockreview.net/images/pie-clipart-vector-4.png);
+background-repeat: repeat-y;
+background-position: 95% 5%;
+
+}
+
+.c {
+
+position: absolute;
+left: 100px;
+top: 210px;
+
+}
+
+footer {
+
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+background-color: brown;
+color: white;
+text-align: center;
+
+}
